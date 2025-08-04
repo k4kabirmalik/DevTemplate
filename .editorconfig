@@ -1,0 +1,95 @@
+root = true
+
+[*.cs]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# File Header
+file_header_template = "File: {file_name}\nAuthor: Kabir\nDate: {date}\nDescription: {description}"
+
+# Imports and Using directives
+dotnet_remove_unnecessary_imports = true
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
+dotnet_style_using_directive_placement = outside_namespace:warning
+
+# Naming and Qualification
+dotnet_style_qualification_for_field = true:warning
+dotnet_style_qualification_for_property = true:warning
+dotnet_style_qualification_for_method = true:warning
+dotnet_style_qualification_for_event = true:warning
+dotnet_style_require_accessibility_modifiers = always:warning
+
+# Readability and Formatting
+dotnet_style_allow_statement_immediately_after_block = false:warning
+dotnet_style_namespace_match_folder = true:warning
+csharp_prefer_braces = true:warning
+csharp_style_blank_lines_between_consecutive_braces = true:warning
+csharp_style_blank_line_after_colon_in_constructor_initializer = true:warning
+
+# Initializers
+dotnet_style_object_initializer = true:warning
+dotnet_style_collection_initializer = true:warning
+
+# Simplifications
+dotnet_style_predefined_type_for_locals_parameters_members = true:warning
+dotnet_style_predefined_type_for_member_access = true:warning
+dotnet_style_simplify_boolean_expressions = true:warning
+dotnet_style_prefer_interpolation = true:warning
+dotnet_style_prefer_is_not_expression = true:warning
+dotnet_style_prefer_auto_properties = true:warning
+dotnet_style_prefer_compound_assignment = true:warning
+dotnet_style_prefer_coalesce_expression = true:warning
+dotnet_style_prefer_conditional_expression_over_assignment = true:warning
+dotnet_style_prefer_conditional_expression_over_return = true:warning
+dotnet_style_prefer_inferred_tuple_names = true:warning
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:warning
+dotnet_style_prefer_is_null_check_over_reference_equality = true:warning
+dotnet_style_prefer_null_propagation = true:warning
+dotnet_style_readonly_struct = true:warning
+dotnet_style_prefer_method_group_conversion = true:warning
+
+# Expression Bodied Members
+csharp_style_expression_bodied_methods = true:warning
+csharp_style_expression_bodied_properties = true:warning
+csharp_style_expression_bodied_indexers = true:warning
+csharp_style_expression_bodied_accessors = true:warning
+
+# Variable Declarations
+csharp_style_inlined_variable_declaration = true:warning
+dotnet_style_readonly_field = true:warning
+dotnet_style_prefer_var_for_complex_types = true:warning
+csharp_style_prefer_deconstructed_variable_declaration = true:warning
+
+# Language Features
+csharp_style_prefer_simple_default_expression = true:warning
+csharp_style_namespace_declarations = file_scoped:warning
+csharp_style_prefer_simple_using_statement = true:warning
+csharp_style_prefer_new_expression = true:warning
+csharp_style_prefer_range_operator = true:warning
+csharp_style_prefer_local_over_anonymous_function = true:warning
+csharp_style_throw_expression = true:warning
+dotnet_remove_unnecessary_nullable_directive = true:warning
+
+# Pattern Matching & Delegates
+csharp_style_pattern_matching_over_is_with_cast_check = true:warning
+csharp_style_pattern_matching_over_as_with_null_check = true:warning
+csharp_style_conditional_delegate_call = true:warning
+csharp_style_prefer_static_local_function = true:warning
+
+# Parentheses Clarity
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_other_operators = always_for_clarity:warning
+
+# Analyzer Severities
+dotnet_diagnostic.IDE0004.severity = warning
+dotnet_diagnostic.IDE0036.severity = warning
+dotnet_diagnostic.IDE0044.severity = warning
+dotnet_diagnostic.IDE0058.severity = warning
+dotnet_diagnostic.IDE0059.severity = warning
+dotnet_diagnostic.IDE0060.severity = warning
+dotnet_diagnostic.IDE0078.severity = warning
