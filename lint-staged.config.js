@@ -1,4 +1,4 @@
 module.exports = {
-    "*.{js,json,css,ts}": ["prettier --check"],
-    "*.{cs,xaml}": ["dotnet format --verify-no-changes"],
+    "*.{js,json,css,ts}": ["prettier --write"],
+    "*.{cs,xaml}": ["dotnet format --include"],
 };
